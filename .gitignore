@@ -1,0 +1,4 @@
+# Ignore the directories with name target deepnested in the project structure
+# This is required because this project contains many smaller sub-projects within it
+**/target
+**/.idea
