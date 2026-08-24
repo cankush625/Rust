@@ -1,5 +1,6 @@
 mod tuple;
 mod array_and_slice;
+mod struct_;
 
 fn main() {
     // Tuple module function calls
@@ -7,4 +8,7 @@ fn main() {
 
     // Array and Slice module function call
     array_and_slice::array_and_slice_usage();
+
+    // Struct module function call
+    struct_::execute();
 }
