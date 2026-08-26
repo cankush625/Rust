@@ -2,6 +2,7 @@ mod tuple;
 mod array_and_slice;
 mod struct_;
 mod enum_;
+mod enum_use;
 
 fn main() {
     // Tuple module function call
@@ -15,4 +16,5 @@ fn main() {
 
     // Enum module function call
     enum_::execute();
+    enum_use::execute();
 }
