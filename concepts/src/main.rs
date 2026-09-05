@@ -5,6 +5,7 @@ mod enum_;
 mod enum_use;
 mod enum_c_like;
 mod constants;
+mod variable_bindings;
 
 fn main() {
     // Tuple module function call
@@ -23,4 +24,7 @@ fn main() {
 
     // Constant module function call
     constants::execute();
+
+    // Variable binding module function call
+    variable_bindings::execute();
 }
