@@ -13,6 +13,18 @@ fn var_binding() {
     // The compiler warns about unused variable bindings; these warnings can
     // be silenced by prefixing the variable name with an underscore
     let _unused_variable = 3u32;
+
+    // Mutability
+    // Variable bindings are immutable by default, but this can be
+    // overridden using the mut modifier
+    let mut mutable_binding = 1;
+
+    println!("Before mutation: {}", mutable_binding);
+    
+    // Ok
+    mutable_binding += 1;
+
+    println!("After mutation: {}", mutable_binding);
 }
 
 pub fn execute() {
@@ -23,3 +35,5 @@ pub fn execute() {
 // An integer: 1
 // A boolean: true
 // Meet the unit value: ()
+// Before mutation: 1
+// After mutation: 2
