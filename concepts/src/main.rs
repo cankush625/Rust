@@ -1,3 +1,5 @@
+use std::env::var;
+
 mod tuple;
 mod array_and_slice;
 mod struct_;
@@ -5,7 +7,7 @@ mod enum_;
 mod enum_use;
 mod enum_c_like;
 mod constants;
-mod variable_bindings;
+mod variables;
 
 fn main() {
     // Tuple module function call
@@ -26,5 +28,9 @@ fn main() {
     constants::execute();
 
     // Variable binding module function call
-    variable_bindings::execute();
+    variables::variable_bindings::execute();
+    variables::variable_scope::execute();
+    variables::variable_shadowing::execute();
+    variables::declare_first::execute();
+    variables::freezing::execute();
 }
